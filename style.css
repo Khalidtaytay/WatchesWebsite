@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: black;
+    color: white;
+}
+header{
+    display: flex;
+    border-bottom: 1px solid gray;
+    justify-content: end;
+    align-items: center;
+}
+#titre{
+    position: absolute;
+    left: 10%;
+}
+ul{
+    display: flex;
+}
+header ul li {
+    margin: 0px 20px;
+    cursor: pointer;
+    color: gray;
+}
+ul div{
+    margin: 0px 10px;
+    cursor: pointer;
+    color: gray;
+}

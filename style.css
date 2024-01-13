@@ -21,9 +21,53 @@ header ul li {
     margin: 0px 20px;
     cursor: pointer;
     color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.2s;
+}
+header ul li:hover{
+    color: white;
 }
 ul div{
     margin: 0px 10px;
     cursor: pointer;
     color: gray;
+    transition: 0.2s;
 }
+ul div:hover {
+    color: white;
+}
+
+
+/*section*/
+
+.btn{
+    background: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid gray;
+    height: 25px;
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.pirce{
+    display: flex;
+    width: 220px;
+    height: 300px;
+    transition: 1s ease-in-out;
+    transform: translateX(10%);
+    font-size:xx-large;
+    align-items: center;
+}
+.stars{
+    position: absolute;
+    top: 25%;
+    font-size: small;
+}
+
+img{
+    width: 200px;
+}
+

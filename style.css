@@ -8,6 +8,7 @@ body{
     background: black;
     color: white;
     overflow: hidden;
+   
 }
 header{
     display: flex;
@@ -15,7 +16,6 @@ header{
     justify-content: end;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
-
 }
 #titre{
     position: absolute;
@@ -23,6 +23,34 @@ header{
 }
 ul{
     display: flex;
+}
+.mobile{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: black;
+    height: 70%;
+    width: 100%;
+    border: 1px solid gray;
+    z-index: 1000;
+    transition: 1s ease-in-out ;
+    
+}
+.mobileIcon{
+    display: flex;
+    position: relative;
+    top: 40px;
+}
+.icon2{
+    margin: 20px;
+}
+.mobile li {
+    margin: 20px;
+    position: relative;
+    top: 30px;
 }
 header ul li {
     margin: 15px 20px;
@@ -188,4 +216,121 @@ img{
 .watch-border img{
     width: 120px;
     position: absolute;
+}
+.menu{
+    display: none;
+}
+
+
+
+@media (max-width: 800px){
+    body{
+        background: black;
+        overflow: scroll;
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        flex-direction: column;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        
+        height: 1045px;
+
+    }
+    .btn{
+        background: transparent;
+        position: absolute;
+        top: 75%;
+    }
+    .pirce{
+        display: flex;
+        background: transparent;
+        font-size: xx-large;
+        width: 280px;
+        height: 400px;
+        align-items: center;
+        position: relative;
+        top: auto;
+        animation: price2 3s ease-in-out;
+        transform: translateX(0);
+    
+    }
+    @keyframes price2 {
+        from{
+            opacity: 0;
+            transform: translateX(-60%);
+
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .bio{
+        position: relative;
+        top: auto;
+        color: gray;
+        width: 250px;
+        height: 400px;
+        font-size: smaller;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        transform: translateX(0);
+        animation: movebio2 4s ease-in-out;
+    }
+    @keyframes movebio2 {
+        from{
+            opacity: 0;
+            transform: translateX(30%);
+    
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .swiper{
+        animation: none;
+        background: transparent;
+        position: relative;
+        top: 47%;
+        height: 850px;
+        animation: swiper2 1s ease-in-out;
+        
+    }
+    @keyframes swiper2 {
+        from{
+            opacity: 0;
+    
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .watch-border img{
+        width: 70px;
+    }
+    .bio-btn{
+        background: transparent;
+        top: 70%;
+
+    }
+    .pc{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        margin: 15px 20px;
+        z-index: 1000;
+    }
+    .icon{
+        display: none;
+    }
+
+
+
 }

@@ -18,3 +18,12 @@ const swiper = new Swiper('.swiper', {
     },
   
 });
+let Menu = document.querySelector('.menu');
+let Mobile = document.querySelector('.mobile');
+function showMenu(){
+    if(Mobile.style.display === 'flex'){
+        Mobile.style.display = 'none'
+    }else{
+        Mobile.style.display = 'flex'
+    }
+};

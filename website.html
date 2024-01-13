@@ -6,8 +6,12 @@
     <title>Document</title>
     <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@500&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f25e473145.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
@@ -40,21 +44,38 @@
             <button class="btn">ADD TO CART</button>
 
         </div>
-        <div class="watches">
-            <img src="images/kindpng_1581842.png" alt="">
-            <img src="images/kindpng_652230.png" alt="">
-            <img src="images/kindpng_4973313.png" alt="">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/kindpng_3332234.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/kindpng_652230.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/kindpng_4973313.png" alt=""></div>    
+            </div>
+            <!--pagination -->
+            <div class="swiper-pagination"></div>
 
         </div>
+     
+
         <div class="bio">
+            <div class="watch-border"><img src="images/watches-border.png" alt=""></div>
+            <p>Personalized watches are a job of quality 
+                and commitment. Each piece is the result of a 
+                work of co-creation of innovation and responsible 
+                sensitivity for users.
+            </p>
+            <button class="bio-btn">
+                LEARN MORE
+            </button>
 
         </div>
+
+
+        
     </section>
 
 
 
 
-    <link rel="stylesheet" href="style.css">
     <script src="javascirpt.js"></script>
 </body>
 </html>

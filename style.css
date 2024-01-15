@@ -92,7 +92,7 @@ section{
     cursor: pointer;
 }
 
-.pirce{
+.pirce {
     display: flex;
     background: transparent;
     font-size: xx-large;
@@ -100,20 +100,19 @@ section{
     height: 400px;
     align-items: center;
     position: absolute;
-    left: 0;
-    top: 20%;
-    transform: translateX(30%);
+    left: 1%;
+    top: 50%; /* Vertical center */
+    transform: translate(30%, -50%);
     animation: move 3s ease-in-out;
 }
 @keyframes move {
-    from{
+    from {
         opacity: 0;
-        transform: translateX(0);
-
+        transform: translate(0, -50%);
     }
     to {
         opacity: 1;
-        transform: translateX(30%);
+        transform: translate(30%, -50%);
     }
 }
 .stars{
@@ -128,27 +127,28 @@ img{
     top: 5%;
 }
 .swiper {
-   position: absolute;
-   margin-inline: initial;
-   background-color: transparent;
-   width: 275px;
-   height: 530px;
-   display: flex;
-   text-align: center;
-   cursor: grab;
-   top: 95%;
-   transform: translateY(-95%);
-   animation: moveprice 1s ease-in-out;
+    position: absolute;
+    margin-inline: auto; /* Center horizontally */
+    background-color: transparent;
+    width: 275px;
+    height: 530px;
+    display: flex;
+    text-align: center;
+    cursor: grab;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    animation: moveprice 1s ease-in-out;
 }
 @keyframes moveprice {
    from{
        opacity: 0;
-       transform: translateY(-60%);
+       transform: translate(-50%, -0%);
 
    }
    to {
        opacity: 1;
-       transform: translateY(-95%);
+       transform: translate(-50%, -50%);
    }
 }
 .swiper-pagination-bullet{
@@ -172,29 +172,29 @@ img{
     
 }
 
-.bio{
-    position: absolute;
-    color: gray;
-    width: 250px;
-    height: 400px;
-    right: 0px;
-    top: 20%;
-    font-size: small;
-    background: transparent;
+.bio {
     display: flex;
-    align-items: center;
-    transform: translateX(-30%);
+    align-items: flex-end; /* Align to the end (bottom) */
+    background: transparent;
+    color: gray;
+    font-size: smaller;
+    width: 280px;
+    height: 300px;
+    position: absolute;
+    right: 2%;
+    top: 50%; /* Vertical center */
+    transform: translate(0%, -50%);
     animation: movebio 4s ease-in-out;
 }
-@keyframes movebio {
-    from{
-        opacity: 0;
-        transform: translateX(0);
 
+@keyframes movebio {
+    from {
+        opacity: 0;
+        transform: translate(100%, -50%);
     }
     to {
         opacity: 1;
-        transform: translateX(-30%);
+        transform: translate(0%, -50%);
     }
 }
 .bio-btn{
@@ -207,7 +207,7 @@ img{
     cursor: pointer;
     color: gray;
     position: absolute;
-    bottom: 0;;
+    top: 109%;
 }
 .bio-btn:hover{
     color: white;
@@ -216,6 +216,7 @@ img{
 .watch-border img{
     width: 120px;
     position: absolute;
+    top: 25%
 }
 .menu{
     display: none;
@@ -227,6 +228,7 @@ img{
     body{
         background: black;
         overflow: scroll;
+        align-items: center;
         margin: 0;
         padding: 0;
     }
@@ -296,10 +298,14 @@ img{
         animation: none;
         background: transparent;
         position: relative;
-        top: 47%;
-        height: 850px;
+        top: 200px;
+        left: 30%;
+        height: 700px;
         animation: swiper2 1s ease-in-out;
         
+    }
+    .swiper img {
+        width: 80%;
     }
     @keyframes swiper2 {
         from{
@@ -313,6 +319,8 @@ img{
 
     .watch-border img{
         width: 70px;
+        position: absolute;
+        top: -5%;
     }
     .bio-btn{
         background: transparent;
